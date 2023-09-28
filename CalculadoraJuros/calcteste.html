@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora em JavaScript</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="text" id="numero1" placeholder="Número 1">
+    <input type="text" id="numero2" placeholder="Número 2">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado">Resultado: </p>
+
+    <script>
+        function calcular() {
+            // Obtém os valores dos campos de entrada
+            var num1 = parseFloat(document.getElementById('numero1').value);
+            var num2 = parseFloat(document.getElementById('numero2').value);
+
+            // Realiza a operação desejada (neste caso, a multiplicação)
+            var resultado = num1 * num2;
+
+            // Atualiza o conteúdo do elemento com o ID 'resultado'
+            document.getElementById('resultado').textContent = 'Resultado: ' + resultado;
+        }
+    </script>
+</body>
+</html>
