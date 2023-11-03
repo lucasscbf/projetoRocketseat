@@ -41,11 +41,12 @@ body * {
    
 }
 #container { /* para identificar ID usa #*/
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     
    /* border: 1px solid red;*/
     margin: 56px auto 0px; /*sendo aplicado em cima, direita e esquerda, e em baixo*/
-
+    padding: 0 24px;
     /*display: block; /*block -> da toda a largura possivel de tela*/
       /* height: 720px; -> alinha altura automatico para ser fluido*/
    
